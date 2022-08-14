@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Formulario OrdenWhatsapp</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form class="whatsapp-form">
+<div class="datainput">
+<input class="validate" id="wa_name" name="name" required="" type="text" value=''/>
+<span class="highlight"></span><span class="bar"></span>
+<label>Su Nombre</label>
+</div>
+<div class="datainput">
+<input class="validate" id="wa_email" name="email" required="" type="email" value=''/>
+<span class="highlight"></span><span class="bar"></span>
+<label>Email</label>
+</div>
+<div class="datainput">
+<select id="wa_select">
+  <option hidden='hidden' selected='selected' value='default'>Seleccion opcion</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+</div>
+<div class="datainput">
+<input class="validate" id="wa_number" name="count" required="" type="number" value=''/>
+<span class="highlight"></span><span class="bar"></span>
+<label>Numero de entrada</label>
+</div>
+<div class="datainput">
+<input class="validate" id="wa_url" name="url" required="" type="url" value=''/>
+<span class="highlight"></span><span class="bar"></span>
+<label>URL/Link</label>
+<p>Link blog Anda, gunakan http:// atau https://</p>
+</div>
+<div class="datainput">
+<textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
+<span class="highlight"></span><span class="bar"></span>
+<label>Descripcion</label>
+</div>
+<a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">Enviar a Whatsapp</a>
+<div id="text-info"></div>
+</form>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
